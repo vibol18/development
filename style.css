@@ -1,0 +1,243 @@
+:root {
+  --bg: #fff;
+  --text: #333;
+  --primary: #0066cc;
+}
+*{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+[data-theme="dark"] {
+  --bg: #1a1a1a;
+  --text: #eee;
+  --primary: #3399ff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    filter: drop-shadow( 1px 1px 20px blue);
+
+}
+
+nav {
+  background: var(--bg);
+  border-bottom: 1px solid #ddd;
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+}
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+section {
+  padding: 3rem 0;
+}
+.projects .project-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.project-item {
+  background: var(--bg);
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.project-item h3 {
+  margin-bottom: 0.5rem;
+}
+.project-item a {
+  color: var(--primary);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.contact input,
+.contact textarea {
+  padding: 0.5rem;:root {
+  --bg: #fff;
+  --text: #222;
+  --primary: #007bff;
+}
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #eee;
+  --primary: #66ccff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+nav {
+  background: var(--bg);
+  border-bottom: 1px solid #ccc;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+}
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.hero .profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+section {
+  padding: 3rem 0;
+}
+.projects .project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.project-item {
+  background: var(--bg);
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+.project-item img {
+  width: 100%;
+  border-radius: 4px;
+}
+.project-item h3 {
+  margin-top: 0.5rem;
+}
+.project-item a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact input,
+.contact textarea {
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+.contact button {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--bg);
+}
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact button {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+}

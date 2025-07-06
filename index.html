@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h1 class="logo">Bol Developer</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <header class="hero" data-aos="fade-up">
+    <div class="container">
+      <img src="https://scontent.fpnh8-1.fna.fbcdn.net/v/t39.30808-6/502673940_707220088923729_3177739160484042401_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH8H8JAhsJVIUDXbx1TJpkWQ6OyzjsFWkZDo7LOOwVaRiSSJHfskPkXTFsPAqw3dDFJGSWxuj_xP0WC49nkpxL2&_nc_ohc=SGp8izEYPAcQ7kNvwHseGdW&_nc_oc=AdlPFZ3-G6uGKRJDyuFD0cp3Nle4wHLn9_MYQYK0IAiNehYT21LNkk_mnXYLb0fY0io&_nc_zt=23&_nc_ht=scontent.fpnh8-1.fna&_nc_gid=gmiLMIH-Sq0ru8Ouch7kZQ&oh=00_AfR5pJxCT3rhmyatqTHzj155KPhVxoIP25E4cm8oMAv3Bw&oe=68703E4F" alt="Profile Picture" class="profile-pic" />
+      <h2>Hi, I'm Vibol</h2>
+      <p>Creative Web Developer</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </header>
+
+  <section id="about" class="about container" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>I’m a developer passionate about building beautiful websites.</p>
+  </section>
+
+  <section id="projects" class="projects container">
+    <h2 data-aos="zoom-in">Projects</h2>
+    <div class="project-list">
+      <div class="project-item" data-aos="flip-left">
+        <img src="https://via.placeholder.com/300x200" alt="Project 1" />
+        <h3>Project One</h3>
+        <p>Short description of the project.</p>
+        <a href="#">View</a>
+      </div>
+      <div class="project-item" data-aos="flip-right">
+        <img src="https://via.placeholder.com/300x200" alt="Project 2" />
+        <h3>Project Two</h3>
+        <p>Another cool project.</p>
+        <a href="#">View</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-msg"></p>
+  </section>
+
+  <footer class="footer" data-aos="fade-in">
+    <p>&copy; Website create by Chhorn Vibol.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
